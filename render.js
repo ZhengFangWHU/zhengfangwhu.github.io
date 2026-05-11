@@ -1,6 +1,6 @@
 (function () {
   const data = siteData;
-  const topVenues = ["CCS", "USENIX Security", "S&P", "NDSS", "ICML"];
+  const topVenues = ["CCS", "USENIX Security", "S&P", "NDSS", "ICML", "ICME", "TDSC"];
 
   function escapeHtml(value) {
     const span = document.createElement("span");
@@ -36,13 +36,32 @@
   document.getElementById("nav-logo").textContent = data.name;
   document.getElementById("profile-name").textContent = data.name;
   document.getElementById("profile-title").textContent = data.title;
-  document.getElementById("profile-affiliation").textContent = data.affiliation;
   document.getElementById("profile-bio").textContent = data.bio;
   document.getElementById("footer-text").textContent = data.footerText;
 
   document.getElementById("profile-links").innerHTML = data.links
     .map((item) => linkHtml(item.label, item.url, item.primary))
     .join("");
+
+  function renderTimeline(items) {
+    return items
+      .map(
+        (item) => `
+          <article class="timeline-item">
+            <div class="timeline-date">${escapeHtml(item.date)}</div>
+            <div class="timeline-detail">
+              <h3>${escapeHtml(item.title)}</h3>
+              ${item.place ? `<p class="timeline-place">${escapeHtml(item.place)}</p>` : ""}
+              <p>${escapeHtml(item.detail)}</p>
+            </div>
+          </article>
+        `
+      )
+      .join("");
+  }
+
+  document.getElementById("education-list").innerHTML = renderTimeline(data.education);
+  document.getElementById("experience-list").innerHTML = renderTimeline(data.experience);
 
   document.getElementById("research-list").innerHTML = data.research
     .map(
@@ -70,7 +89,6 @@
               <span class="pub-title">${escapeHtml(paper.title)}</span>
               <span class="pub-authors">${emphasizeName(paper.authors)}</span>
               <span class="pub-venue">${formatVenue(paper.venue)}</span>
-              ${paper.citations ? `<span class="pub-citations">${escapeHtml(paper.citations)}</span>` : ""}
               ${links ? `<span class="pub-links">${links}</span>` : ""}
             </li>
           `;

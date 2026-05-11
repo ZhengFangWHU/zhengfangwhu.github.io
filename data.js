@@ -1,8 +1,7 @@
 const siteData = {
   name: "Zheng Fang",
-  title: "AI Security / AI Safety / Trustworthy AI",
-  affiliation: "Wuhan University",
-  bio: "I work on AI security, AI safety, and trustworthy AI, with a focus on adversarial attacks and defenses for modern machine learning systems, including automatic speech recognition systems, audio language models, and large language models.",
+  title: "Trustworthy AI / AI Security",
+  bio: "My research focuses on trustworthy AI, mainly including adversarial attacks and defenses, and LLM/MLLM security and safety.",
   links: [
     {
       label: "Google Scholar",
@@ -10,22 +9,50 @@ const siteData = {
       primary: true
     },
     {
-      label: "GitHub",
-      url: "https://github.com/zhengfangwhu"
+      label: "Email",
+      url: "mailto:zhengfang618@whu.edu.cn"
+    }
+  ],
+  education: [
+    {
+      date: "2022 - 2025",
+      title: "M.S. in Cyberspace Security",
+      place: "Wuhan University",
+      detail: "Advisor: Qian Wang"
+    },
+    {
+      date: "2018 - 2022",
+      title: "B.E. in Computer Science and Technology",
+      place: "Wuhan University",
+      detail: "Advisor: Qian Wang"
     }
   ],
   research: [
     {
-      title: "Audio and Speech Security",
-      description: "Adversarial attacks and defenses for automatic speech recognition systems and audio language models."
+      title: "Adversarial Attacks and Defenses",
+      description: "Adversarial attacks against speech models such as automatic speech recognition systems."
     },
     {
-      title: "LLM Safety",
-      description: "Jailbreak attacks, defenses, safety alignment, and concept-level analysis of large language models."
+      title: "Backdoor Attacks",
+      description: "Backdoor attacks against visual models and speech models."
     },
     {
-      title: "Adversarial and Backdoor Robustness",
-      description: "Transferability, black-box attacks, and practical backdoor threats across image, video, and speech models."
+      title: "LLM/MLLM Security and Safety",
+      description: "Security-related interpretability, jailbreak attacks and safety alignment for LLMs and MLLMs, and privacy issues in LLMs."
+    }
+  ],
+  experience: [
+    {
+      date: "Aug. 2025 - Present",
+      title: "Algorithm Engineer, Agent Security",
+      place: "",
+      detail: "Working on attacks and security hardening for agents."
+    },
+    {
+      date: "May 2024 - Aug. 2024",
+      title: "Algorithm Intern, Large Model Security Red Teaming",
+      place: "Alibaba Group",
+      detail: "Responsible for red teaming LLMs and MLLMs, and exploring backdoor attacks against large models and agents."
     }
   ],
   publicationsNote: "Publication list based on Google Scholar, checked on May 11, 2026.",
@@ -34,10 +61,9 @@ const siteData = {
       year: 2026,
       papers: [
         {
-          title: "Devling into adversarial transferability on image classification: Review, benchmark, and evaluation",
-          authors: "X Wang, Z Ge, B Liu, Z Fang, F Zhou, R Zhang, S Wang, Y Luo",
+          title: "Devling into Adversarial Transferability on Image Classification: Review, Benchmark, and Evaluation",
+          authors: "Xiaosen Wang, Zhijin Ge, Bohan Liu, Zheng Fang, Fengfan Zhou, Ruixuan Zhang, Shaokang Wang, Yuyang Luo",
           venue: "arXiv preprint arXiv:2602.23117",
-          citations: "2 citations",
           links: {
             Preprint: "https://arxiv.org/abs/2602.23117",
             Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:Se3iqnhoufwC"
@@ -46,11 +72,11 @@ const siteData = {
         {
           title: "Sparse Tokens Suffice: Jailbreaking Audio Language Models via Token-Aware Gradient Optimization",
           authors: "Zheng Fang, Xiaosen Wang, Shenyi Zhang, Shaokang Wang, Zhijin Ge",
-          venue: "Forty-Third International Conference on Machine Learning (ICML), 2026",
-          citations: "",
+          venue: "International Conference on Machine Learning (ICML), 2026",
           links: {
             Preprint: "https://arxiv.org/abs/2605.04700",
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:UebtZRa9Y70C"
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:UebtZRa9Y70C",
+            Official: "https://icml.cc/Downloads/2026"
           }
         }
       ]
@@ -60,29 +86,31 @@ const siteData = {
       papers: [
         {
           title: "Selective Masking Adversarial Attack on Automatic Speech Recognition Systems",
-          authors: "Z Fang, S Zhang, T Wang, B Li, L Zhao, Z Wang",
+          authors: "Zheng Fang, Shenyi Zhang, Tao Wang, Bowen Li, Lingchen Zhao, Zhangyi Wang",
           venue: "IEEE International Conference on Multimedia and Expo (ICME), 2025",
-          citations: "",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:LkGwnXOMwfcC"
+            Preprint: "https://arxiv.org/abs/2504.04394",
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:LkGwnXOMwfcC",
+            Official: "https://ieeexplore.ieee.org/document/11210179"
           }
         },
         {
-          title: "CuckooAttack: Towards practical backdoor attack against automatic speech recognition systems",
-          authors: "B Li, Y Ge, Z Fang, T Wang, L Zhao, Q Lu, N Jiang, Q Wang",
-          venue: "IEEE Transactions on Dependable and Secure Computing, 2025",
-          citations: "3 citations",
+          title: "CuckooAttack: Towards Practical Backdoor Attack against Automatic Speech Recognition Systems",
+          authors: "Bowen Li, Yunjie Ge, Zheng Fang, Tao Wang, Lingchen Zhao, Quan Lu, Ning Jiang, Qian Wang",
+          venue: "IEEE Transactions on Dependable and Secure Computing (TDSC), 2025",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:_FxGoFyzp5QC"
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:_FxGoFyzp5QC",
+            Official: "https://doi.org/10.1109/TDSC.2025.3548611"
           }
         },
         {
-          title: "JBShield: Defending large language models from jailbreak attacks through activated concept analysis and manipulation",
-          authors: "S Zhang, Y Zhai, K Guo, H Hu, S Guo, Z Fang, L Zhao, C Shen, C Wang, et al.",
-          venue: "34th USENIX Security Symposium (USENIX Security), 2025",
-          citations: "47 citations",
+          title: "JBShield: Defending Large Language Models from Jailbreak Attacks through Activated Concept Analysis and Manipulation",
+          authors: "Shenyi Zhang, Yuchen Zhai, Keyan Guo, Hongxin Hu, Shengnan Guo, Zheng Fang, Lingchen Zhao, Chao Shen, Cong Wang, Qian Wang",
+          venue: "USENIX Security Symposium (USENIX Security), 2025",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:roLk4NBRz8UC"
+            Preprint: "https://arxiv.org/abs/2502.07557",
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:roLk4NBRz8UC",
+            Official: "https://www.usenix.org/conference/usenixsecurity25/presentation/zhang-shenyi"
           }
         }
       ]
@@ -91,21 +119,23 @@ const siteData = {
       year: 2024,
       papers: [
         {
-          title: "Zero-query adversarial attack on black-box automatic speech recognition systems",
-          authors: "Z Fang, T Wang, L Zhao, S Zhang, B Li, Y Ge, Q Li, C Shen, Q Wang",
+          title: "Zero-Query Adversarial Attack on Black-box Automatic Speech Recognition Systems",
+          authors: "Zheng Fang, Tao Wang, Lingchen Zhao, Shenyi Zhang, Bowen Li, Yunjie Ge, Qi Li, Chao Shen, Qian Wang",
           venue: "ACM Conference on Computer and Communications Security (CCS), 2024",
-          citations: "26 citations",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:IjCSPb-OGe4C"
+            Preprint: "https://arxiv.org/abs/2406.19311",
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:IjCSPb-OGe4C",
+            Official: "https://dl.acm.org/doi/abs/10.1145/3658644.3670309"
           }
         },
         {
-          title: "Hijacking attacks against neural network by analyzing training data",
-          authors: "Y Ge, Q Wang, H Huang, Q Li, C Wang, C Shen, L Zhao, P Jiang, Z Fang, et al.",
-          venue: "33rd USENIX Security Symposium (USENIX Security), 2024",
-          citations: "9 citations",
+          title: "Hijacking Attacks against Neural Networks by Analyzing Training Data",
+          authors: "Yunjie Ge, Qian Wang, Huayang Huang, Qi Li, Cong Wang, Chao Shen, Lingchen Zhao, Peipei Jiang, Zheng Fang, Shenyi Zhang",
+          venue: "USENIX Security Symposium (USENIX Security), 2024",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:UeHWp8X0CEIC"
+            Preprint: "https://arxiv.org/abs/2401.09740",
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:UeHWp8X0CEIC",
+            Official: "https://www.usenix.org/conference/usenixsecurity24/presentation/ge-hijacking"
           }
         }
       ]
@@ -115,11 +145,12 @@ const siteData = {
       papers: [
         {
           title: "Palette: Physically-Realizable Backdoor Attacks Against Video Recognition Models",
-          authors: "X Gong, Z Fang, B Li, T Wang, Y Chen, Q Wang",
-          venue: "IEEE Transactions on Dependable and Secure Computing 21(4), 2672-2685",
-          citations: "9 citations",
+          authors: "Xueluan Gong, Zheng Fang, Bowen Li, Tao Wang, Yanjiao Chen, Qian Wang",
+          venue: "IEEE Transactions on Dependable and Secure Computing (TDSC), 2024",
           links: {
-            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:u-x6o8ySG0sC"
+            Preprint: "https://openreview.net/forum?id=CcinTjYZno",
+            Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:u-x6o8ySG0sC",
+            Official: "https://doi.org/10.1109/TDSC.2023.3314792"
           }
         }
       ]
@@ -127,12 +158,9 @@ const siteData = {
   ],
   contact: [
     {
-      label: "Affiliation",
-      value: "Wuhan University"
-    },
-    {
-      label: "Verified email domain",
-      value: "whu.edu.cn"
+      label: "Email",
+      value: "zhengfang618@whu.edu.cn",
+      url: "mailto:zhengfang618@whu.edu.cn"
     },
     {
       label: "Google Scholar",
