@@ -44,9 +44,9 @@ const siteData = {
   experience: [
     {
       date: "May 2024 - Aug. 2024",
-      title: "Algorithm Intern, Large Model Security Red Teaming",
+      title: "Algorithm Intern, LLM/MLLM Security Red Teaming",
       place: "Alibaba Group",
-      detail: "Responsible for red teaming LLMs and MLLMs, and exploring backdoor attacks against large models and agents."
+      detail: "Responsible for red teaming LLMs and MLLMs, and exploring backdoor attacks against LLMs, MLLMs, and agents."
     }
   ],
   publicationsNote: "Publication list based on Google Scholar, checked on May 11, 2026.",

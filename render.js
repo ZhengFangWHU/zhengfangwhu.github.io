@@ -1,6 +1,6 @@
 (function () {
   const data = siteData;
-  const topVenues = ["CCS", "USENIX Security", "S&P", "NDSS", "ICML", "ICME", "TDSC"];
+  const topVenues = ["CCS", "USENIX Security", "S&P", "NDSS", "ICML", "TDSC"];
 
   function escapeHtml(value) {
     const span = document.createElement("span");
@@ -27,7 +27,8 @@
     let escaped = escapeHtml(venue);
     topVenues.forEach((venueName) => {
       const safeVenue = escapeHtml(venueName);
-      escaped = escaped.replaceAll(safeVenue, `<span class="venue-rank">${safeVenue}</span>`);
+      const pattern = new RegExp(`\\(${safeVenue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\)`, "g");
+      escaped = escaped.replace(pattern, `(<span class="venue-rank">${safeVenue}</span>)`);
     });
     return escaped;
   }
