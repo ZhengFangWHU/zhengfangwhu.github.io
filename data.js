@@ -15,16 +15,16 @@ const siteData = {
   ],
   education: [
     {
-      date: "2022 - 2025",
+      date: "",
       title: "M.S. in Cyberspace Security",
       place: "Wuhan University",
-      detail: "Advisor: Qian Wang"
+      detail: "Advisor: Prof. Qian Wang"
     },
     {
-      date: "2018 - 2022",
+      date: "",
       title: "B.E. in Computer Science and Technology",
       place: "Wuhan University",
-      detail: "Advisor: Qian Wang"
+      detail: "Advisor: Prof. Qian Wang"
     }
   ],
   research: [
@@ -42,12 +42,6 @@ const siteData = {
     }
   ],
   experience: [
-    {
-      date: "Aug. 2025 - Present",
-      title: "Algorithm Engineer, Agent Security",
-      place: "",
-      detail: "Working on attacks and security hardening for agents."
-    },
     {
       date: "May 2024 - Aug. 2024",
       title: "Algorithm Intern, Large Model Security Red Teaming",

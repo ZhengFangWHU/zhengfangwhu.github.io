@@ -47,8 +47,8 @@
     return items
       .map(
         (item) => `
-          <article class="timeline-item">
-            <div class="timeline-date">${escapeHtml(item.date)}</div>
+          <article class="timeline-item${item.date ? "" : " timeline-item-no-date"}">
+            ${item.date ? `<div class="timeline-date">${escapeHtml(item.date)}</div>` : ""}
             <div class="timeline-detail">
               <h3>${escapeHtml(item.title)}</h3>
               ${item.place ? `<p class="timeline-place">${escapeHtml(item.place)}</p>` : ""}
