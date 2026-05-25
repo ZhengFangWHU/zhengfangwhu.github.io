@@ -33,7 +33,7 @@
     return escaped;
   }
 
-  document.title = `${data.name} - Homepage`;
+  document.title = `${data.name} — Homepage`;
   document.getElementById("nav-logo").textContent = data.name;
   document.getElementById("profile-name").textContent = data.name;
   document.getElementById("profile-title").textContent = data.title;
