@@ -1,7 +1,7 @@
 const siteData = {
   name: "Zheng Fang",
   title: "Trustworthy AI / AI Security",
-  bio: "My research focuses on trustworthy AI, mainly including adversarial attacks and defenses, and LLM/MLLM security and safety.",
+  bio: "My research focuses on trustworthy AI, including adversarial attacks and defenses, backdoor attacks, LLM/MLLM security and safety, and agent security.",
   links: [
     {
       label: "Google Scholar",
@@ -17,13 +17,13 @@ const siteData = {
     {
       date: "",
       title: "M.S. in Cyberspace Security",
-      place: "Wuhan University",
+      place: "School of Cyber Science and Engineering, Wuhan University",
       detail: "Advisor: Prof. Qian Wang"
     },
     {
       date: "",
       title: "B.E. in Computer Science and Technology",
-      place: "Wuhan University",
+      place: "School of Computer Science, Wuhan University",
       detail: "Advisor: Prof. Qian Wang"
     }
   ],
@@ -39,23 +39,33 @@ const siteData = {
     {
       title: "LLM/MLLM Security and Safety",
       description: "Security-related interpretability, jailbreak attacks and safety alignment for LLMs and MLLMs, and privacy issues in LLMs."
+    },
+    {
+      title: "Agent Security",
+      description: "Attack-surface analysis, adversarial testing, offensive security, and security hardening for AI agents."
     }
   ],
   experience: [
     {
-      date: "May 2024 - Aug. 2024",
+      date: "Aug. 2025 - Present",
+      title: "Senior Engineer",
+      place: "Huawei",
+      detail: "Working on agent security for Huawei's agent products, including offensive security, risk mitigation, and security assessments of OpenClaw; conducting attack-surface analysis, adversarial testing, and security hardening, with more than 10 security issues identified."
+    },
+    {
+      date: "Jun. 2024 - Aug. 2024",
       title: "Algorithm Intern, LLM/MLLM Security Red Teaming",
-      place: "Alibaba Group",
-      detail: "Responsible for red teaming LLMs and MLLMs, and exploring backdoor attacks against LLMs, MLLMs, and agents."
+      place: "Alibaba Security",
+      detail: "Conducted jailbreak research on audio language models and MLLMs, and analyzed and validated backdoor attacks against agents; supported LLM security evaluation, stress testing, and red-teaming methodology development."
     }
   ],
-  publicationsNote: "Publication list based on Google Scholar, checked on May 11, 2026.",
+  publicationsNote: "Publication list based on Google Scholar and CV, updated on June 24, 2026.",
   publications: [
     {
       year: 2026,
       papers: [
         {
-          title: "Devling into Adversarial Transferability on Image Classification: Review, Benchmark, and Evaluation",
+          title: "Delving into Adversarial Transferability on Image Classification: Review, Benchmark, and Evaluation",
           authors: "Xiaosen Wang, Zhijin Ge, Bohan Liu, Zheng Fang, Fengfan Zhou, Ruixuan Zhang, Shaokang Wang, Yuyang Luo",
           venue: "arXiv preprint arXiv:2602.23117",
           links: {
@@ -131,12 +141,7 @@ const siteData = {
             Scholar: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=b_O92vsAAAAJ&citation_for_view=b_O92vsAAAAJ:UeHWp8X0CEIC",
             Official: "https://www.usenix.org/conference/usenixsecurity24/presentation/ge-hijacking"
           }
-        }
-      ]
-    },
-    {
-      year: 2023,
-      papers: [
+        },
         {
           title: "Palette: Physically-Realizable Backdoor Attacks Against Video Recognition Models",
           authors: "Xueluan Gong, Zheng Fang, Bowen Li, Tao Wang, Yanjiao Chen, Qian Wang",
