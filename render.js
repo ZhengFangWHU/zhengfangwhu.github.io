@@ -63,6 +63,7 @@
 
   document.getElementById("education-list").innerHTML = renderTimeline(data.education);
   document.getElementById("experience-list").innerHTML = renderTimeline(data.experience);
+  document.getElementById("service-list").innerHTML = renderTimeline(data.service);
 
   document.getElementById("research-list").innerHTML = data.research
     .map(

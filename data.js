@@ -59,6 +59,26 @@ const siteData = {
       detail: "Conducted jailbreak research on audio language models and MLLMs, and analyzed and validated backdoor attacks against agents; supported LLM security evaluation, stress testing, and red-teaming methodology development."
     }
   ],
+  service: [
+    {
+      date: "2027",
+      title: "Program Committee Member",
+      place: "USENIX Security Symposium (USENIX Security), 2027",
+      detail: "Invited to serve on the program committee."
+    },
+    {
+      date: "2026",
+      title: "Reviewer",
+      place: "IEEE International Conference on Multimedia and Expo (ICME), 2026",
+      detail: "Invited to serve as a reviewer."
+    },
+    {
+      date: "2025",
+      title: "Reviewer",
+      place: "IEEE International Conference on Multimedia and Expo (ICME), 2025",
+      detail: "Invited to serve as a reviewer."
+    }
+  ],
   publicationsNote: "Publication list based on Google Scholar and CV, updated on June 24, 2026.",
   publications: [
     {
